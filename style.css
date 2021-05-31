@@ -1,0 +1,72 @@
+body{
+    background: #659999;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f4791f, #659999);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f4791f, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.box{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+h1{
+    font-family: 'Pattaya' 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-size: 90px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.leftCorner{
+    border-radius: 0px 0px 0px 10px;
+}
+
+.rightCorner{
+    border-radius: 0px 0px 10px 0px;
+}
+
+.black p{
+    color: white;
+}
+
+.piano{
+    display: flex;
+}
+
+.key{
+    height: calc(var(--width) * 4);
+    width: var(--width);
+}
+
+.black{
+    --width: 60px;
+    background-color: black;
+    margin-left: calc(var(--width) / -2);
+    margin-right: calc(var(--width) / -2);
+    z-index: 2;
+}
+
+.white{
+    --width: 100px;
+    border: 1px solid #333;
+    background-color: white;
+}
+
+.white.active {
+    background-color: #cccccc;
+}
+
+.black.active {
+    background-color: gray;
+}
+
+.cp-text{ color: rgba(0,0,0,.7); text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+}
